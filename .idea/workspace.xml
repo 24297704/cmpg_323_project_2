@@ -18,6 +18,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tehan\Desktop\NWU\CMPG323\cmpg_323_project_2\server\data" />
+      <recent name="C:\Users\Tehan\Desktop\NWU\CMPG323\cmpg_323_project_2\server" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -26,7 +32,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605187532426</updated>
-      <workItem from="1605187533707" duration="622000" />
+      <workItem from="1605187533707" duration="1168000" />
     </task>
     <servers />
   </component>
