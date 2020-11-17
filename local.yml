@@ -1,0 +1,20 @@
+version: '3.5'
+
+services:
+
+  database:
+    domainname: docker
+    hostname: database
+    image: mongo:4.4.1
+    ports:
+      - "27017:27017"
+    volumes:
+    - mongovol-local:/data/db
+    - mongovol-local:/data/configdb
+
+
+
+
+volumes:
+  mongovol-local:
+    driver: 'local'

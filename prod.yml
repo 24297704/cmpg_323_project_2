@@ -1,0 +1,48 @@
+version: '3.5'
+
+services:
+  database:
+    domainname: docker
+    hostname: database
+    restart: always
+    build:
+      context: database
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=supersecret
+    volumes:
+      - mongovol-prod:/data/db
+      - mongovol-prod:/data/configdb
+    ports:
+      - "27018:27017"
+    healthcheck:
+      test: ["CMD", "docker-healthcheck"]
+      start_period: 30s
+      interval: 10s
+      timeout: 10s
+      retries: 10
+
+  server:
+    hostname: server
+    domainname: docker
+    restart: always
+    build:
+      context: server
+    environment:
+      NODE_ENV: production
+    links:
+      - database:database.docker
+    depends_on:
+      - database
+    ports:
+      - "3101:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/status"]
+      start_period: 30s
+      interval: 30s
+      timeout: 10s
+      retries: 10
+
+volumes:
+  mongovol-prod:
+    driver: 'local'
