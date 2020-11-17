@@ -11,11 +11,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6e12779-f787-422b-9ac4-d5cbbff05c0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/bin/healthcheck.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/config/development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/config/production.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/data/seeder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/database/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/database/project/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/database/project/models/employee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/database/project/models/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/database/project/models/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/utils/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/utils/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/utils/redact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/auth/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/employees/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/database/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data/initial_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/initial_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +40,17 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1kBwwW0k1APV0xFkSBnYvbFHqXx" />
   <component name="ProjectLevelVcsManager">
@@ -36,11 +63,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
+    <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.13.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.7" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tehan\Desktop\NWU\CMPG323\cmpg_323_project_2\server\routes\auth" />
       <recent name="C:\Users\Tehan\Desktop\NWU\CMPG323\cmpg_323_project_2\server\data" />
       <recent name="C:\Users\Tehan\Desktop\NWU\CMPG323\cmpg_323_project_2\server" />
     </key>
@@ -56,6 +90,9 @@
       <workItem from="1605187533707" duration="2385000" />
       <workItem from="1605627863590" duration="37000" />
       <workItem from="1605627930396" duration="985000" />
+      <workItem from="1605629278209" duration="1346000" />
+      <workItem from="1605630658746" duration="17000" />
+      <workItem from="1605630688046" duration="13486000" />
     </task>
     <servers />
   </component>
@@ -72,15 +109,24 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1395" y="410" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605628576397">
+    <state x="1395" y="410" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605630911465">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1395" y="410" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1605628576397" />
+    <state x="1395" y="410" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1605630911465" />
     <state x="1024" y="590" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1605627876835">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1024" y="590" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1605627876835" />
+    <state x="845" y="499" key="SettingsEditor" timestamp="1605634130194">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="845" y="499" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1605634130194" />
+    <state x="924" y="509" key="editAsTableFormatDialogDimension" timestamp="1605630698712">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="924" y="509" key="editAsTableFormatDialogDimension/0.0.2560.1440@0.0.2560.1440" timestamp="1605630698712" />
   </component>
 </project>
