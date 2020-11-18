@@ -8,18 +8,22 @@ const config = require(process.env.APP_CONFIG)
 const fastify = require('fastify')(config.server.options)
 const modules = require('./modules')
 const utils = modules.utils
+
 fastify.register(require('fastify-cors'), { origin: '*' })
 fastify.decorate('configServer', config.server)
 fastify.decorate('appConfig', config)
 fastify.decorate('databases', {})
 fastify.decorate('redact', utils.redact)
 const seeder = require('./data/seeder')
+
 fastify.register(require('./database'), config.database).after(async () => {
   await seeder.seedData(fastify)
 })
+
 fastify
   .register(utils.auth)
   .register(require(`./routes`), { prefix: '/api', logLevel: config.routes.logLevel }).after(async () => { })
+
 fastify.setErrorHandler(function (error, request, reply) {
   fastify.log.error(error)
   if (error.statusCode) {

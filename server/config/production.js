@@ -16,7 +16,7 @@ module.exports = {
         logLevel: 'error'
     },
     database: {
-        uri: 'mongodb://root:supersecret@mongo/project?&authSource=admin',
+        uri: 'mongodb://root:supersecret@database/project?&authSource=admin',
         options: {
             useNewUrlParser: true,
             keepAlive: 1,

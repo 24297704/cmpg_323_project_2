@@ -10,28 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6e12779-f787-422b-9ac4-d5cbbff05c0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/config/development.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/production.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/data/seeder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/project/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/project/models/employee.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/project/models/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/project/models/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/modules/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/modules/utils/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/modules/utils/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/modules/utils/redact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/auth/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/employees/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/index.js" afterDir="false" />
+    <list default="true" id="f6e12779-f787-422b-9ac4-d5cbbff05c0b" name="Default Changelist" comment="Finished Most of the logic. Updated Docker.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/server/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data/initial_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/initial_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/production.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/production.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/employees/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/employees/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,8 +77,17 @@
       <workItem from="1605627930396" duration="985000" />
       <workItem from="1605629278209" duration="1346000" />
       <workItem from="1605630658746" duration="17000" />
-      <workItem from="1605630688046" duration="13486000" />
+      <workItem from="1605630688046" duration="14495000" />
+      <workItem from="1605731270863" duration="4933000" />
     </task>
+    <task id="LOCAL-00001" summary="Finished Most of the logic. Updated Docker.">
+      <created>1605644410100</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605644410100</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +105,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finished Most of the logic. Updated Docker." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Most of the logic. Updated Docker." />
+  </component>
   <component name="WindowStateProjectService">
     <state x="1395" y="410" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605630911465">
       <screen x="0" y="0" width="2560" height="1440" />
@@ -124,6 +122,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="845" y="499" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1605634130194" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1605731465980">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1605731465980" />
     <state x="924" y="509" key="editAsTableFormatDialogDimension" timestamp="1605630698712">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
